@@ -21,4 +21,10 @@
 
             return view('pages/dashboard/dashboard', compact('dataFeed'));
         }
+
+        public function tespage()
+        {
+            return view('tespages');
+        }
+
     }

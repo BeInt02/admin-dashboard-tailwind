@@ -26,4 +26,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::fallback(function() {
         return view('pages/utility/404');
     });    
+
+    Route::get('/tesss', [DashboardController::class, 'tespage']);
+        
 });
